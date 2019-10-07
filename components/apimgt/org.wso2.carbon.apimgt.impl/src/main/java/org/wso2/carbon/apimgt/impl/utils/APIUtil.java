@@ -9218,9 +9218,9 @@ public final class APIUtil {
     }
 
     /**
-     * Get expiry time of a given jwt token
-     * @param token jwt token
-     * @return the expiry time
+     * Get expiry time of a given jwt token.
+     * @param token jwt token.
+     * @return the expiry time.
      */
     public static Long getExpiryifJWT(String token) {
         String[] jwtParts = token.split("\\.");
@@ -9235,6 +9235,11 @@ public final class APIUtil {
         return 0L;
     }
 
+    /**
+     * Get signature of  given JWT token.
+     * @param token jwt token.
+     * @return signature of the jwt token.
+     */
     public static String getSignatureIfJWT(String token) {
         if (token.contains(APIConstants.DOT)) {
             try {
