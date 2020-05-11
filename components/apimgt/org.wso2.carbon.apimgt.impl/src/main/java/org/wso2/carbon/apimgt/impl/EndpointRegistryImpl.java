@@ -112,4 +112,12 @@ public class EndpointRegistryImpl implements EndpointRegistry {
         }
         return apiMgtDAO.getEndpointRegistryEntries(registryId);
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    public EndpointRegistryEntry getEndpointRegistryEntryByUUID(String registryEntryUuid) throws APIManagementException {
+
+        return apiMgtDAO.getEndpointRegistryEntryByUUID(registryEntryUuid);
+    }
 }
